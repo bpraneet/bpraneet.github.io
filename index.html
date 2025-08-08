@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Praneeth Boddeti's Portfolio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -17,6 +18,10 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -282,9 +287,10 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
 </div>
 </section>
 <!-- Projects-->
-  <div id="projects">
+<div id="projects">
     <div class="container-fluid p-0">
         <div class="row g-0">
+            <!-- Project 1 -->
             <div class="col-lg-4 col-sm-6">
                 <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal1">
                     <img class="img-fluid" src="assets/img/projects/thumbnails/1.jpg" alt="Robotic Ant Leg Design" />
@@ -294,11 +300,61 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
                     </div>
                 </div>
             </div>
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                    <img class="img-fluid" src="assets/img/projects/thumbnails/2.jpg" alt="Maze Solving and Path Tracking" />
+                    <div class="projects-box-caption">
+                        <div class="project-category text-white-50">Robotics & Vision</div>
+                        <div class="project-name">Maze Solving & Path Tracking</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                    <img class="img-fluid" src="assets/img/projects/thumbnails/3.jpg" alt="Soft Robotic Arm" />
+                    <div class="projects-box-caption">
+                        <div class="project-category text-white-50">Mechatronics</div>
+                        <div class="project-name">Soft Robotic Arm</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 4 -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                    <img class="img-fluid" src="assets/img/projects/thumbnails/4.jpg" alt="Omni-Wheel Smart Wheelchair" />
+                    <div class="projects-box-caption">
+                        <div class="project-category text-white-50">IoT & Assistive Tech</div>
+                        <div class="project-name">Omni-Wheel Smart Wheelchair</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 5 -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal5">
+                    <img class="img-fluid" src="assets/img/projects/thumbnails/5.jpg" alt="Project 5" />
+                    <div class="projects-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                    <img class="img-fluid" src="assets/img/projects/thumbnails/6.jpg" alt="Project 6" />
+                    <div class="projects-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
-<!-- Project Modal -->
+<!-- Project Modal 1 -->
 <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-scrollable">
         <div class="modal-content">
@@ -320,7 +376,6 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
                         </div>
                     </div>
                 </div>
-                
                 <div class="highlight-list">
                     <h6 class="section-title">Key Highlights</h6>
                     <div class="highlight-item">
@@ -336,17 +391,14 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
                         <span>Using simple electronic devices like the ESP32 and servo motors designed and fabricated a mobile robot.</span>
                     </div>
                 </div>
-                
                 <div class="mt-4">
                     <h6 class="section-title">Technologies Used</h6>
                     <p class="description-text">MuJoCo Simulation, Python, ESP32 Microcontroller, Servo Motors, Origami-inspired Design, Vinyl Cutting, Linkage Mechanics, Rapid Prototyping</p>
                 </div>
-                
                 <div class="mt-4">
                     <h6 class="section-title">Project Outcomes</h6>
                     <p class="description-text">Successfully demonstrated the transition from biological inspiration concept to a practical physical mobile robot, showcasing the importance of iterative design and rapid prototyping in robotics research. The project validated multiple fabrication techniques and control mechanisms for bio-inspired robotic systems.</p>
                 </div>
-                
                 <div class="mt-4">
                     <h6 class="section-title">Skills Developed</h6>
                     <ul class="description-text">
@@ -364,57 +416,303 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
         </div>
     </div>
 </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/2.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/2.jpg" alt="..." />
-                            <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+
+<!-- Project Modal 2 -->
+<div class="modal fade" id="projectModal2" tabindex="-1" aria-labelledby="projectModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModal2Label">Maze Solving and Path Tracking Using a 6DOF MyCobot 600 Robot</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/fullsize/2.jpg" class="img-fluid project-image-large" alt="Maze Solving and Path Tracking">
                     </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/3.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/3.jpg" alt="..." />
-                            <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/4.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/4.jpg" alt="..." />
-                            <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/5.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/5.jpg" alt="..." />
-                            <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/6.jpg" title="Project Name">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/6.jpg" alt="..." />
-                            <div class="projects-box-caption p-3">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+                    <div class="col-md-6">
+                        <span class="category-badge">Robotics & Vision</span>
+                        <div class="description-text">
+                            <p>Utilized computer vision to detect a maze via a camera and employed the watershed method to solve it.</p>
+                            <p>Applied the A* algorithm in Python to refine the path by converting multiple waypoints into a concise set of optimal waypoints.</p>
+                        </div>
                     </div>
                 </div>
+                <div class="highlight-list">
+                    <h6 class="section-title">Key Highlights</h6>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Implemented computer vision for maze detection and segmentation.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Developed and optimized path planning using the A* algorithm.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Integrated vision and motion planning with a 6DOF robotic arm.</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Technologies Used</h6>
+                    <p class="description-text">Python, OpenCV, A* Algorithm, MyCobot 600, CAD</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Project Outcomes</h6>
+                    <p class="description-text">Demonstrated a robust pipeline from vision-based maze detection to robotic path execution, highlighting the synergy between computer vision and robotics.</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Skills Developed</h6>
+                    <ul class="description-text">
+                        <li>Computer vision and image processing</li>
+                        <li>Path planning algorithms</li>
+                        <li>Robotic arm programming</li>
+                        <li>System integration</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
+    </div>
+</div>
+
+<!-- Project Modal 3 -->
+<div class="modal fade" id="projectModal3" tabindex="-1" aria-labelledby="projectModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModal3Label">Soft Robotic Arm</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/fullsize/3.jpg" class="img-fluid project-image-large" alt="Soft Robotic Arm">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="category-badge">Mechatronics</span>
+                        <div class="description-text">
+                            <p>Awarded Best Project by Barrow Neurological Institute for designing an innovative soft robotic device that aided in 40% faster recovery for patients.</p>
+                            <p>Employed a novel Bowden cable mechanism and various mechatronic devices.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-list">
+                    <h6 class="section-title">Key Highlights</h6>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Designed and fabricated a soft robotic arm for rehabilitation.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Implemented Bowden cable actuation for flexible movement.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Integrated Arduino-based control for precise actuation.</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Technologies Used</h6>
+                    <p class="description-text">SolidWorks, Arduino, Bowden Cable, Mechatronics</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Project Outcomes</h6>
+                    <p class="description-text">Enabled faster patient recovery and demonstrated the effectiveness of soft robotics in medical rehabilitation.</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Skills Developed</h6>
+                    <ul class="description-text">
+                        <li>Soft robotics design</li>
+                        <li>Mechatronic system integration</li>
+                        <li>Arduino programming</li>
+                        <li>Medical device prototyping</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Modal 4 -->
+<div class="modal fade" id="projectModal4" tabindex="-1" aria-labelledby="projectModal4Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModal4Label">Published Paper on an Omni-Wheel based smart wheelchair</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/fullsize/4.jpg" class="img-fluid project-image-large" alt="Omni-Wheel Smart Wheelchair">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="category-badge">IoT & Assistive Tech</span>
+                        <div class="description-text">
+                            <p>Received the Best Project Award for an innovative design and implementation of a 3D printed omni-wheel driven, IoT enabled wheelchair prototype that can convert into a stretcher for patients.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-list">
+                    <h6 class="section-title">Key Highlights</h6>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Designed a multi-functional wheelchair with omni-wheel drive.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Integrated IoT features for remote monitoring and control.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Published research paper and received departmental award.</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Technologies Used</h6>
+                    <p class="description-text">Fusion360, Arduino, IoT, 3D Printing</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Project Outcomes</h6>
+                    <p class="description-text">Demonstrated a novel assistive device for patient mobility and care, combining mechanical innovation with IoT connectivity.</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Skills Developed</h6>
+                    <ul class="description-text">
+                        <li>IoT system integration</li>
+                        <li>Assistive device design</li>
+                        <li>3D printing and prototyping</li>
+                        <li>Embedded programming</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Modal 5 -->
+<div class="modal fade" id="projectModal5" tabindex="-1" aria-labelledby="projectModal5Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModal5Label">Project Name</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/fullsize/5.jpg" class="img-fluid project-image-large" alt="Project 5">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="category-badge">Category</span>
+                        <div class="description-text">
+                            <p>Project description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-list">
+                    <h6 class="section-title">Key Highlights</h6>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Highlight 1</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Highlight 2</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Technologies Used</h6>
+                    <p class="description-text">Technology 1, Technology 2</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Project Outcomes</h6>
+                    <p class="description-text">Project outcomes go here.</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Skills Developed</h6>
+                    <ul class="description-text">
+                        <li>Skill 1</li>
+                        <li>Skill 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Modal 6 -->
+<div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModal6Label">Project Name</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/fullsize/6.jpg" class="img-fluid project-image-large" alt="Project 6">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="category-badge">Category</span>
+                        <div class="description-text">
+                            <p>Project description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-list">
+                    <h6 class="section-title">Key Highlights</h6>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Highlight 1</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Highlight 2</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Technologies Used</h6>
+                    <p class="description-text">Technology 1, Technology 2</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Project Outcomes</h6>
+                    <p class="description-text">Project outcomes go here.</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Skills Developed</h6>
+                    <ul class="description-text">
+                        <li>Skill 1</li>
+                        <li>Skill 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
         <!-- Contact-->
         <section class="page-section" id="contact">
-            <div class="container px-4 px-lg-5">
+            <div class="cont</div>ainer px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8 col-xl-6 text-center">
                         <h2 class="mt-0">Let's Get In Touch!</h2>
