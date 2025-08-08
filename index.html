@@ -240,141 +240,178 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
         <!-- Extracurricular Experience Section -->
 <div class="mb-5">
     <h2 class="h3 mb-4 text-primary">EXTRACURRICULAR EXPERIENCE</h2>
-    
+
+    <!-- Secretary Role -->
     <div class="mb-4">
         <div class="d-flex justify-content-between align-items-center">
             <h4 class="h5 mb-1">Secretary</h4>
             <span class="text-muted" style="min-width: 140px; text-align: right;">01/2018–01/2021</span>
         </div>
         <p class="text-muted mb-2">American Society of Mechanical Engineers (ASME) Student Chapter, Chennai, India</p>
-        <ul class="text-muted">
+        <ul class="text-muted"></ul>
             <li>Ensured the smooth flow of work in all the technical and non-technical teams.</li>
             <li>Organized several meetings and events to build teamwork amongst the teams.</li>
         </ul>
     </div>
 
+    <!-- Technical Team (NAVIS) Lead -->
     <div class="mb-4">
         <div class="d-flex justify-content-between align-items-center">
             <h4 class="h5 mb-1">Technical Team (NAVIS) Lead</h4>
             <span class="text-muted" style="min-width: 140px; text-align: right;">01/2016–01/2017</span>
         </div>
         <p class="text-muted mb-2">ASME, Chennai, India</p>
-        <ul class="text-muted">
+        <ul class="text-muted"></ul>
             <li>Led a team to secure 4th place in the All-India ASME E-Fest competition.</li>
-            <li>The project involved designing and fabricating a solar-powered RC boat capable of carrying a specified payload and navigating a predetermined path while avoiding obstacles.</li>
+            <li>Designed and fabricated a solar-powered RC boat capable of carrying a specified payload and navigating a predetermined path while avoiding obstacles.</li>
         </ul>
     </div>
 
+    <!-- Hackathon Participant -->
     <div class="mb-4">
-        <div class="d-flex justify-content-between align-items-center">
-            <h4 class="h5 mb-1">48 Hour hack-a-thon Participant</h4>
+        <div class="d-flex justify-content-between align-items-center"></div>
+            <h4 class="h5 mb-1">48 Hour Hackathon Participant</h4>
             <span class="text-muted" style="min-width: 140px; text-align: right;">06/06/2016–06/08/2016</span>
         </div>
         <p class="text-muted mb-2">IIT Madras, Chennai, India</p>
-        <ul class="text-muted">
-            <li>Participated in a Hack-A-Thon organized by IIT Madras, where the team's objective was to develop a smart mirror integrated with Alexa. The mirror was designed to display various information, assisting users with their daily tasks efficiently.</li>
+        <ul class="text-muted"></ul>
+            <li>Participated in a Hackathon organized by IIT Madras, developing a smart mirror integrated with Alexa to display information and assist users with daily tasks.</li>
         </ul>
     </div>
 </div>
-    </div>
+</div>
 </section>
 <!-- Projects-->
-        <div id="projects">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <style>
-                        .projects-box img {
-                            width: 100%;
-                            height: 250px;
-                            object-fit: cover;
-                            object-position: center;
-                            border-radius: 0;
-                        }
-                    </style>
+  <div id="projects">
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-lg-4 col-sm-6">
+                <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                    <img class="img-fluid" src="assets/img/projects/thumbnails/1.jpg" alt="Robotic Ant Leg Design" />
+                    <div class="projects-box-caption">
+                        <div class="project-category text-white-50">Robotics & Simulation</div>
+                        <div class="project-name">Robotic Ant Leg Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Project Modal -->
+<div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModal1Label">Research and Optimization of Robotic Ant Leg Design</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/fullsize/1.jpg" class="img-fluid project-image-large" alt="Robotic Ant Leg Design">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="category-badge">Robotics & Simulation</span>
+                        <div class="description-text">
+                            <p>Under Dr. Aukes at ASU, we explored rapid, low-cost prototyping to test the potential of simple linkage mechanisms.</p>
+                            <p>Using MuJoCo, we analyzed forces and kinematics, transitioning from an ant-like leg design to a bat-style wing.</p>
+                            <p>The course demonstrated that no concept is too ambitious when broken into manageable challenges and iterated upon.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="highlight-list">
+                    <h6 class="section-title">Key Highlights</h6>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Using MuJoCo, designed various types of linkages and studied their behavior under gravity and additional forces.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Employing origami-inspired folding techniques and vinyl cutting and layering methods to create several leg prototypes.</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Using simple electronic devices like the ESP32 and servo motors designed and fabricated a mobile robot.</span>
+                    </div>
+                </div>
+                
+                <div class="mt-4">
+                    <h6 class="section-title">Technologies Used</h6>
+                    <p class="description-text">MuJoCo Simulation, Python, ESP32 Microcontroller, Servo Motors, Origami-inspired Design, Vinyl Cutting, Linkage Mechanics, Rapid Prototyping</p>
+                </div>
+                
+                <div class="mt-4">
+                    <h6 class="section-title">Project Outcomes</h6>
+                    <p class="description-text">Successfully demonstrated the transition from biological inspiration concept to a practical physical mobile robot, showcasing the importance of iterative design and rapid prototyping in robotics research. The project validated multiple fabrication techniques and control mechanisms for bio-inspired robotic systems.</p>
+                </div>
+                
+                <div class="mt-4">
+                    <h6 class="section-title">Skills Developed</h6>
+                    <ul class="description-text">
+                        <li>Multi-physics simulation using MuJoCo</li>
+                        <li>Mechanical linkage design and analysis</li>
+                        <li>Rapid prototyping with diverse materials</li>
+                        <li>Microcontroller programming and integration</li>
+                        <li>Bio-inspired robotics principles</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/1.jpg" title="Research and Optimization of Robotic Ant Leg Design"
-                           data-description="Simulated robotic ant legs in Python and Mujoco to optimize leg length, stiffness, and damping using SciPy. Tested optimization algorithms (BFGS, LMS) and validated results through physical fabrication.">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/1.jpg" alt="Robotic Ant Leg Design" />
+                        <a class="projects-box" href="assets/img/projects/fullsize/2.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/projects/thumbnails/2.jpg" alt="..." />
                             <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Robotics & Simulation</div>
-                                <div class="project-name">Robotic Ant Leg Design</div>
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/2.jpg" title="Maze Solving and Path Tracking Using a 6DOF MyCobot 600 Robot"
-                           data-description="Utilized computer vision to detect a maze via a camera and employed the watershed method to solve it. Applied the A* algorithm to refine the path by converting multiple waypoints into optimal waypoints. Transformed world coordinates into MyCobot 600-specific coordinates using TCP/IP socket communication.">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/2.jpg" alt="Maze Solving MyCobot" />
+                        <a class="projects-box" href="assets/img/projects/fullsize/3.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/projects/thumbnails/3.jpg" alt="..." />
                             <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Computer Vision & Robotics</div>
-                                <div class="project-name">Maze Solving MyCobot</div>
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/3.jpg" title="Soft Robotic Arm"
-                           data-description="Awarded Best Project in the course for designing an innovative soft robotic device for elbow rehabilitation. Achieved seamless integration of mechatronic components, contributing to nearly 40% faster recovery for patients. Employed a novel Bowden-cable mechanism.">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/3.jpg" alt="Soft Robotic Arm" />
+                        <a class="projects-box" href="assets/img/projects/fullsize/4.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/projects/thumbnails/4.jpg" alt="..." />
                             <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Medical Robotics</div>
-                                <div class="project-name">Soft Robotic Arm</div>
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/4.jpg" title="Omni-Wheel Smart Wheelchair"
-                           data-description="Received Best Project Award for innovative design and implementation. Developed a patent-pending robotic wheelchair with omni-wheel drive system and ability to transform into a stretcher. Incorporates IoT integration and autonomous navigation capabilities.">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/4.jpg" alt="Omni-Wheel Smart Wheelchair" />
+                        <a class="projects-box" href="assets/img/projects/fullsize/5.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/projects/thumbnails/5.jpg" alt="..." />
                             <div class="projects-box-caption">
-                                <div class="project-category text-white-50">IoT & Assistive Tech</div>
-                                <div class="project-name">Smart Wheelchair</div>
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
                             </div>
                         </a>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/5.jpg" title="Parrot Mambo Drone Manipulation"
-                           data-description="Used Python and MATLAB to create an algorithm for a drone to follow lines, detect colors and perform specific tasks. Implemented autonomous navigation and computer vision for drone control."></a>
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/5.jpg" alt="Parrot Mambo Drone" />
-                            <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Drone Technology</div>
-                                <div class="project-name">Parrot Mambo Drone</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/6.jpg" title="Vision-Guided Sorting System Using ABB IRB 360 FlexPicker"
-                           data-description="Developed and implemented an automated color-based sorting system for supply chain optimization, utilizing machine vision technology to identify package designations and route items to appropriate conveyor belts.">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/6.jpg" alt="Vision-Guided Sorting System" />
-                            <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Industrial Automation</div>
-                                <div class="project-name">Vision-Guided Sorting</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/7.jpg" title="Automated Material Handling Using ABB IRB 1410 6-Axis Robot"
-                           data-description="Operated a 6-axis industrial robot to execute pick and place tasks, effectively simulating the movement of items within a warehouse environment through manual control.">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/7.jpg" alt="Automated Material Handling" />
-                            <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Industrial Robotics</div>
-                                <div class="project-name">Material Handling Robot</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="projects-box" href="assets/img/projects/fullsize/8.jpg" title="Obstacle Detection Circuit with Ultrasonic Sensor"
-                           data-description="Developed and implemented an automated color-based sorting system for supply chain optimization, utilizing machine vision technology to identify package designations and route items to appropriate conveyor belts for efficient distribution.">
-                            <img class="img-fluid" src="assets/img/projects/thumbnails/8.jpg" alt="Obstacle Detection Circuit" />
-                            <div class="projects-box-caption">
-                                <div class="project-category text-white-50">Electronics & Sensors</div>
-                                <div class="project-name">Obstacle Detection System</div>
+                        <a class="projects-box" href="assets/img/projects/fullsize/6.jpg" title="Project Name">
+                            <img class="img-fluid" src="assets/img/projects/thumbnails/6.jpg" alt="..." />
+                            <div class="projects-box-caption p-3">
+                                <div class="project-category text-white-50">Category</div>
+                                <div class="project-name">Project Name</div>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-
         <!-- Contact-->
         <section class="page-section" id="contact">
             <div class="container px-4 px-lg-5">
@@ -458,36 +495,7 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-        <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            document.querySelectorAll('.projects-box').forEach(function(box) {
-                box.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    const imgSrc = box.getAttribute('href');
-                    const desc = box.getAttribute('data-description') || '';
-                    const popup = document.createElement('div');
-                    popup.style.position = 'fixed';
-                    popup.style.top = '0';
-                    popup.style.left = '0';
-                    popup.style.width = '100vw';
-                    popup.style.height = '100vh';
-                    popup.style.background = 'rgba(0,0,0,0.8)';
-                    popup.style.display = 'flex';
-                    popup.style.alignItems = 'center';
-                    popup.style.justifyContent = 'center';
-                    popup.style.zIndex = '9999';
-                    popup.innerHTML = `
-                        <div style="background:#fff; padding:24px; border-radius:8px; max-width:500px; text-align:center; position:relative;">
-                            <img src="${imgSrc}" alt="" style="max-width:100%; border-radius:4px;" />
-                            <p style="margin-top:16px;">${desc}</p>
-                            <button style="position:absolute;top:8px;right:8px;" onclick="this.parentElement.parentElement.remove()">Close</button>
-                        </div>
-                    `;
-                    document.body.appendChild(popup);
-                });
-            });
-        });
-        </script>
+        
     </body>
 </html>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
