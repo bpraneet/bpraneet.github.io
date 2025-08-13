@@ -11018,237 +11018,337 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
-
-/* Mobile devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  header.masthead {
-    padding-top: 8rem;
-    padding-bottom: 6rem;
-    min-height: 80vh;
-    background-size: cover;
-    background-position: center center;
-    /* Ensure background doesn't scroll on mobile for better performance */
-    background-attachment: scroll;
-  }
-  
-  header.masthead h1, header.masthead .h1 {
-    font-size: 1.75rem;
-    line-height: 1.2;
-  }
-  
-  header.masthead p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  header.masthead {
-    padding-top: 9rem;
-    padding-bottom: 7rem;
-    min-height: 85vh;
-    background-position: center center;
-  }
-  
-  header.masthead h1, header.masthead .h1 {
-    font-size: 2rem;
-  }
-  
-  header.masthead p {
-    font-size: 1rem;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  header.masthead {
-    padding-top: 9.5rem;
-    padding-bottom: 8rem;
-    min-height: 90vh;
-    background-position: center center;
-  }
-  
-  header.masthead h1, header.masthead .h1 {
-    font-size: 2.5rem;
-  }
-  
-  header.masthead p {
-    font-size: 1.05rem;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
-    background-position: center center;
-    background-attachment: fixed; /* Parallax effect on desktop */
   }
-  
   header.masthead p {
     font-size: 1.15rem;
   }
-  
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
 }
-
-/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
-  
-  header.masthead p {
-    font-size: 1.2rem;
-  }
 }
 
-/* Ultra wide screens (1400px and up) */
-@media (min-width: 1400px) {
-  header.masthead {
-    background-position: center center;
-    /* Ensure image covers properly on very wide screens */
-    background-size: cover;
-  }
-  
-  header.masthead h1, header.masthead .h1 {
-    font-size: 4rem;
-  }
-}
+/* Projects Gallery Responsive Styles */
 
-/* High DPI displays - serve higher quality image if available */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  header.masthead {
-    /* If you have a higher resolution version, use it here */
-    /* background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead@2x.jpg"); */
-  }
-}
-
-/* Landscape orientation adjustments */
-@media screen and (orientation: landscape) and (max-height: 600px) {
-  header.masthead {
-    min-height: 100vh;
-    padding-top: 6rem;
-    padding-bottom: 4rem;
-  }
-  
-  header.masthead h1, header.masthead .h1 {
-    font-size: 2rem;
-  }
-}
-
-/* Dark mode support (optional) */
-@media (prefers-color-scheme: dark) {
-  header.masthead {
-    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.9) 0%, rgba(92, 77, 66, 0.9) 100%), url("../assets/img/bg-masthead.jpg");
-  }
-}
-
-/* Reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  header.masthead {
-    background-attachment: scroll;
-  }
-}
-#projects .container-fluid, #projects .container-sm, #projects .container-md, #projects .container-lg, #projects .container-xl, #projects .container-xxl {
-  max-width: 1920px;
-}
-#projects .container-fluid .projects-box, #projects .container-sm .projects-box, #projects .container-md .projects-box, #projects .container-lg .projects-box, #projects .container-xl .projects-box, #projects .container-xxl .projects-box {
-  position: relative;
-  display: block;
-}
-#projects .container-fluid .projects-box .projects-box-caption, #projects .container-sm .projects-box .projects-box-caption, #projects .container-md .projects-box .projects-box-caption, #projects .container-lg .projects-box .projects-box-caption, #projects .container-xl .projects-box .projects-box-caption, #projects .container-xxl .projects-box .projects-box-caption {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  bottom: 0;
-  text-align: center;
-  opacity: 0;
-  color: #fff;
-  background: rgba(4, 146, 194, 0.9);
-  transition: opacity 0.25s ease;
-  text-align: center;
-}
-#projects .container-fluid .projects-box .projects-box-caption .project-category, #projects .container-sm .projects-box .projects-box-caption .project-category, #projects .container-md .projects-box .projects-box-caption .project-category, #projects .container-lg .projects-box .projects-box-caption .project-category, #projects .container-xl .projects-box .projects-box-caption .project-category, #projects .container-xxl .projects-box .projects-box-caption .project-category {
-  font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.85rem;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-#projects .container-fluid .projects-box .projects-box-caption .project-name, #projects .container-sm .projects-box .projects-box-caption .project-name, #projects .container-md .projects-box .projects-box-caption .project-name, #projects .container-lg .projects-box .projects-box-caption .project-name, #projects .container-xl .projects-box .projects-box-caption .project-name, #projects .container-xxl .projects-box .projects-box-caption .project-name {
-  font-size: 1.2rem;
-}
-#projects .container-fluid .projects-box:hover .projects-box-caption, #projects .container-sm .projects-box:hover .projects-box-caption, #projects .container-md .projects-box:hover .projects-box-caption, #projects .container-lg .projects-box:hover .projects-box-caption, #projects .container-xl .projects-box:hover .projects-box-caption, #projects .container-xxl .projects-box:hover .projects-box-caption {
-  opacity: 1;
-}
-
-.projects-box img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 0;
-}
-
+/* Base projects box styling */
 .projects-box {
     position: relative;
-    display: block;
-    cursor: pointer;
-    transition: transform 0.3s ease;
     overflow: hidden;
-    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #000;
+    /* Ensure consistent aspect ratio */
+    aspect-ratio: 4/3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.projects-box:hover {
-    transform: scale(1.02);
-    text-decoration: none;
+/* Image styling for consistent display */
+.projects-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    display: block;
 }
 
+.projects-box:hover img {
+    transform: scale(1.05);
+    filter: brightness(0.7);
+}
+
+/* Image overlay styling */
+.image-overlay {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    z-index: 3;
+}
+
+.projects-box:hover .image-overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.overlay-text {
+    white-space: nowrap;
+}
+
+/* Caption styling */
 .projects-box-caption {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
     color: white;
-    padding: 2rem 1rem 1rem;
-    text-align: center;
+    padding: 20px 15px 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.projects-box:hover .projects-box-caption {
+    transform: translateY(0);
 }
 
 .project-category {
-    font-size: 0.875rem;
+    font-size: 0.8rem;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
-    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    opacity: 0.8;
 }
 
 .project-name {
-    font-size: 1.125rem;
+    font-size: 1rem;
     font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Responsive breakpoints */
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .projects-box {
+        aspect-ratio: 1/1; /* Square format on mobile for better viewing */
+        margin-bottom: 1rem;
+    }
+    
+    .projects-box-caption {
+        padding: 15px 10px 10px;
+    }
+    
+    .project-category {
+        font-size: 0.7rem;
+    }
+    
+    .project-name {
+        font-size: 0.9rem;
+    }
+    
+    .image-overlay {
+        bottom: 10px;
+        right: 10px;
+        padding: 6px 12px;
+        font-size: 0.75rem;
+    }
+    
+    /* Show overlay by default on mobile for better UX */
+    .image-overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .projects-box {
+        aspect-ratio: 4/3;
+        margin-bottom: 1rem;
+    }
+    
+    .project-category {
+        font-size: 0.75rem;
+    }
+    
+    .project-name {
+        font-size: 0.95rem;
+    }
+    
+    .image-overlay {
+        font-size: 0.8rem;
+        padding: 7px 12px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .projects-box {
+        aspect-ratio: 4/3;
+        margin-bottom: 1.5rem;
+    }
+    
+    .projects-box-caption {
+        padding: 18px 12px 12px;
+    }
+    
+    .project-category {
+        font-size: 0.8rem;
+    }
+    
+    .project-name {
+        font-size: 1rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .projects-box {
+        aspect-ratio: 4/3;
+        margin-bottom: 0;
+    }
+    
+    .projects-box-caption {
+        padding: 20px 15px 15px;
+    }
+    
+    .project-category {
+        font-size: 0.8rem;
+    }
+    
+    .project-name {
+        font-size: 1rem;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .projects-box {
+        aspect-ratio: 4/3;
+    }
+    
+    .projects-box-caption {
+        padding: 25px 20px 20px;
+    }
+    
+    .project-category {
+        font-size: 0.85rem;
+    }
+    
+    .project-name {
+        font-size: 1.1rem;
+    }
+    
+    .image-overlay {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+    }
+}
+
+/* Ultra wide screens (1400px and up) */
+@media (min-width: 1400px) {
+    .projects-box {
+        aspect-ratio: 16/10; /* Slightly wider aspect ratio for ultra-wide screens */
+    }
+    
+    .project-name {
+        font-size: 1.2rem;
+    }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .projects-box img {
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+    }
+}
+
+/* Landscape orientation on mobile */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    .projects-box {
+        aspect-ratio: 16/9;
+    }
+    
+    .projects-box-caption {
+        padding: 10px;
+    }
+    
+    .project-category {
+        font-size: 0.7rem;
+    }
+    
+    .project-name {
+        font-size: 0.85rem;
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .projects-box:hover img {
+        transform: none;
+        filter: none;
+    }
+    
+    .projects-box:hover .projects-box-caption {
+        transform: translateY(100%);
+    }
+    
+    .projects-box-caption {
+        transform: translateY(0);
+    }
+    
+    .image-overlay {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+    .projects-box,
+    .projects-box img,
+    .projects-box-caption,
+    .image-overlay {
+        transition: none;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .image-overlay {
+        background: rgba(255, 255, 255, 0.9);
+        color: #000;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Fix for potential layout issues */
+.row.g-0 {
     margin: 0;
+}
+
+.row.g-0 > [class*="col-"] {
+    padding: 0;
+}
+
+/* Container improvements */
+#projects .container-fluid {
+    padding: 0;
+    max-width: 100%;
 }
 
 /* Modal Styles */
@@ -11526,4 +11626,20 @@ header.masthead h1, header.masthead .h1 {
 
 .overlay-text {
     white-space: nowrap;
+}
+/*Adding Download icon*/
+.download-icon {
+    font-size: 40px;
+    color: #000000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+.download-link:hover .download-icon {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+.download-link {
+    text-decoration: none;
+    display: inline-block;
 }
