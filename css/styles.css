@@ -11024,7 +11024,7 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: rgba(4, 146, 194, 0.9);
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11296,3 +11296,36 @@ header.masthead h1, header.masthead .h1 {
             color: #6c757d;
             line-height: 1.6;
         }          
+        /*Creating a custom button colour*/
+
+        /* Method 2: Create a custom button class (recommended) */
+        .btn-custom {
+            background-color: #0492C2;
+            border-color: #0492C2;
+            color: white;
+            font-weight: 500;
+        }
+
+        .btn-custom:hover {
+            background-color: #037ba3;
+            border-color: #036d93;
+            color: white;
+        }
+
+        .btn-custom:focus {
+            background-color: #037ba3;
+            border-color: #036d93;
+            color: white;
+            box-shadow: 0 0 0 0.25rem rgba(4, 146, 194, 0.25);
+        }
+
+        .btn-custom:active {
+            background-color: #036d93;
+            border-color: #035f84;
+            color: white;
+        }
+
+        /* If you want to change text-primary color too */
+        .text-custom {
+            color: #0492C2 !important;
+        }
