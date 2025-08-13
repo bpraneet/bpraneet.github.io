@@ -11018,34 +11018,157 @@ header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
 }
+
+/* Mobile devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  header.masthead {
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    min-height: 80vh;
+    background-size: cover;
+    background-position: center center;
+    /* Ensure background doesn't scroll on mobile for better performance */
+    background-attachment: scroll;
+  }
+  
+  header.masthead h1, header.masthead .h1 {
+    font-size: 1.75rem;
+    line-height: 1.2;
+  }
+  
+  header.masthead p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  header.masthead {
+    padding-top: 9rem;
+    padding-bottom: 7rem;
+    min-height: 85vh;
+    background-position: center center;
+  }
+  
+  header.masthead h1, header.masthead .h1 {
+    font-size: 2rem;
+  }
+  
+  header.masthead p {
+    font-size: 1rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  header.masthead {
+    padding-top: 9.5rem;
+    padding-bottom: 8rem;
+    min-height: 90vh;
+    background-position: center center;
+  }
+  
+  header.masthead h1, header.masthead .h1 {
+    font-size: 2.5rem;
+  }
+  
+  header.masthead p {
+    font-size: 1.05rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
     min-height: 40rem;
     padding-top: 4.5rem;
     padding-bottom: 0;
+    background-position: center center;
+    background-attachment: fixed; /* Parallax effect on desktop */
   }
+  
   header.masthead p {
     font-size: 1.15rem;
   }
+  
   header.masthead h1, header.masthead .h1 {
     font-size: 3rem;
   }
 }
+
+/* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
   }
+  
+  header.masthead p {
+    font-size: 1.2rem;
+  }
 }
 
+/* Ultra wide screens (1400px and up) */
+@media (min-width: 1400px) {
+  header.masthead {
+    background-position: center center;
+    /* Ensure image covers properly on very wide screens */
+    background-size: cover;
+  }
+  
+  header.masthead h1, header.masthead .h1 {
+    font-size: 4rem;
+  }
+}
+
+/* High DPI displays - serve higher quality image if available */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  header.masthead {
+    /* If you have a higher resolution version, use it here */
+    /* background-image: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead@2x.jpg"); */
+  }
+}
+
+/* Landscape orientation adjustments */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  header.masthead {
+    min-height: 100vh;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+  }
+  
+  header.masthead h1, header.masthead .h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  header.masthead {
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.9) 0%, rgba(92, 77, 66, 0.9) 100%), url("../assets/img/bg-masthead.jpg");
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  header.masthead {
+    background-attachment: scroll;
+  }
+}
 #projects .container-fluid, #projects .container-sm, #projects .container-md, #projects .container-lg, #projects .container-xl, #projects .container-xxl {
   max-width: 1920px;
 }
