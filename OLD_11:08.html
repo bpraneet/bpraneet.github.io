@@ -1,3 +1,4 @@
+<!-- This is the Old Code -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -50,34 +51,17 @@
                     </div>
                     <div class="col-lg-8 align-self-baseline">
                         <p class="text-white-75 mb-5" id="typed-text"></p>
-                       <script>
+                        <script>
                             const text = "Engineer | Designer | Inventor | Roboticist";
                             const el = document.getElementById("typed-text");
                             let i = 0;
-
                             function typeWriter() {
                                 if (i < text.length) {
                                     el.textContent += text.charAt(i);
                                     i++;
                                     setTimeout(typeWriter, 80);
-                                } else {
-                                    // After typing is complete, wait then start erasing
-                                    setTimeout(eraseText, 2000); // Wait 2 seconds before erasing
                                 }
                             }
-
-                            function eraseText() {
-                                if (el.textContent.length > 0) {
-                                    el.textContent = el.textContent.slice(0, -1);
-                                    setTimeout(eraseText, 50); // Faster erasing
-                                } else {
-                                    // After erasing is complete, reset and start typing again
-                                    i = 0;
-                                    setTimeout(typeWriter, 500); // Wait 0.5 seconds before starting again
-                                }
-                            }
-
-                            // Start the typewriter effect
                             typeWriter();
                         </script>
                         <a class="btn btn-light btn-xl" href="#about">Find Out More</a>
@@ -117,14 +101,14 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
                     <div class="mb-4">
                         <h4 class="h5 mb-1">M.S. Robotics and Autonomous Systems (System Engineering)</h4>
                         <p class="text-muted mb-1">Arizona State University, Tempe, AZ</p>
-                        <p class="mb-0"><small>January 2024-Present</small></p>
+                        <p class="mb-0"><small>January 2024-Present </small></p>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-4">
                         <h4 class="h5 mb-1">B.S. Mechanical Engineering</h4>
                         <p class="text-muted mb-1">SRM Institute of Science and Technology, Chennai, India</p>
-                        <p class="mb-0"><small>May 2017-June 2021</small></p>
+                        <p class="mb-0"><small>May 2017-June 2021 </small></p> 
                     </div>
                 </div>
             </div>
@@ -350,13 +334,22 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
             <!-- Project 5 -->
             <div class="col-lg-4 col-sm-6">
                 <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal5">
-                    <img class="img-fluid" src="assets/img/projects/thumbnails/5.jpg" alt="Project 5" />
+                    <img class="img-fluid" src="assets/img/projects/thumbnails/5.jpg" alt="Autonomous Object Detection and Navigation" />
                     <div class="projects-box-caption">
                         <div class="project-category text-white-50">Robotics & AI</div>
                         <div class="project-name">Autonomous Object Detection & Navigation</div>
                     </div>
                 </div>
             </div>
+
+            <!-- Project 6 -->
+            <div class="col-lg-4 col-sm-6">
+                <div class="projects-box" data-bs-toggle="modal" data-bs-target="#projectModal6">
+                    <img class="img-fluid" src="assets/img/projects/thumbnails/6.jpg" alt="Project 6" />
+                    <div class="projects-box-caption">
+                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-name">Project Name</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -619,7 +612,7 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
             <div class="modal-body">
                 <div class="row mb-4">
                     <div class="col-md-6">
-                        <img src="assets/img/projects/fullsize/5.jpg" class="img-fluid project-image-large" alt="Project 5">
+                        <img src="assets/img/projects/fullsize/5.jpg" class="img-fluid project-image-large" alt="Autonomous Object Detection and Navigation">
                     </div>
                     <div class="col-md-6">
                         <span class="category-badge">Robotics & AI</span>
@@ -633,11 +626,7 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
                     <h6 class="section-title">Key Highlights</h6>
                     <div class="highlight-item">
                         <i class="bi bi-check-circle-fill highlight-icon"></i>
-                        <span>Highlight 1</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="bi bi-check-circle-fill highlight-icon"></i>
-                         <span>Implemented real-time environment mapping using LiDAR and SLAM with Gmapping algorithm.</span>
+                        <span>Implemented real-time environment mapping using LiDAR and SLAM with Gmapping algorithm.</span>
                     </div>
                     <div class="highlight-item">
                         <i class="bi bi-check-circle-fill highlight-icon"></i>
@@ -657,8 +646,8 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
                     <p class="description-text">ROS2, LiDAR, SLAM (Gmapping), OpenCV, YOLOv5, NAV2, Python, Computer Vision, Path Planning Algorithms</p>
                 </div>
                 <div class="mt-4">
-                    <h6 class="section-title">Skills Developed</h6>
-                    <p class="description-text">Project outcomes go here.</p>
+                    <h6 class="section-title">Project Outcomes</h6>
+                    <p class="description-text">Successfully demonstrated autonomous navigation capabilities with real-time object detection and intelligent path planning. The AGV can dynamically map environments, detect specific objects, and execute complex navigation patterns while maintaining safe clearance distances.</p>
                 </div>
                 <div class="mt-4">
                     <h6 class="section-title">Skills Developed</h6>
@@ -678,42 +667,148 @@ Right now I’m leveling up in ROS, MuJoCo, and NVIDIA Isaac Sim—because faste
         </div>
     </div>
 </div>
-
-
+<!-- Project Modal 6 -->
+<div class="modal fade" id="projectModal6" tabindex="-1" aria-labelledby="projectModal6Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="projectModal6Label">Project Name</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <img src="assets/img/projects/fullsize/6.jpg" class="img-fluid project-image-large" alt="Project 6">
+                    </div>
+                    <div class="col-md-6">
+                        <span class="category-badge">Category</span>
+                        <div class="description-text">
+                            <p>Project description goes here.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight-list">
+                    <h6 class="section-title">Key Highlights</h6>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Highlight 1</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="bi bi-check-circle-fill highlight-icon"></i>
+                        <span>Highlight 2</span>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Technologies Used</h6>
+                    <p class="description-text">Technology 1, Technology 2</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Project Outcomes</h6>
+                    <p class="description-text">Project outcomes go here.</p>
+                </div>
+                <div class="mt-4">
+                    <h6 class="section-title">Skills Developed</h6>
+                    <ul class="description-text">
+                        <li>Skill 1</li>
+                        <li>Skill 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
         <!-- Contact-->
-  <section class="page-section" id="contact">
-    <div class="container px-4 px-lg-5">
-        <div class="row gx-4 gx-lg-5 justify-content-center">
-            <div class="col-lg-8 col-xl-6 text-center">
-                <h2 class="mt-0">Let's Get In Touch!</h2>
-                <hr class="divider" />
-            </div>
-        </div>
-        <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-            <div class="col-lg-6 text-center">
-                <div class="mb-4 d-flex justify-content-center gap-5">
-                    <div class="text-center">
-                        <a href="https://www.linkedin.com/in/praneeth-boddeti/" target="_blank" rel="noopener" style="font-size: 2rem; color: #0A66C2;">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                        <div>LinkedIn</div>
+        <section class="page-section" id="contact">
+            <div class="cont</div>ainer px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0">Let's Get In Touch!</h2>
+                        <hr class="divider" />
                     </div>
-                    <div class="text-center">
-                        <a href="mailto:bpraneet@asu.edu" style="font-size: 2rem; color: #EA4335;">
-                            <i class="bi bi-envelope-fill"></i>
-                        </a>
-                        <div>Email</div>
+                </div>
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    <div class="col-lg-6">
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit success message-->
+                            <!---->
+                            <!-- This is what your users will see when the form-->
+                            <!-- has successfully submitted-->
+                            <div class="d-none" id="submitSuccessMessage">
+                                <div class="text-center mb-3">
+                                    <div class="fw-bolder">Form submission successful!</div>
+                                    To activate this form, sign up at
+                                    <br />
+                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                                </div>
+                            </div>
+                            <!-- Submit error message-->
+                            <!---->
+                            <!-- This is what your users will see when there is-->
+                            <!-- an error submitting the form-->
+                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </div>
+
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
+        </section>
+        <!-- Footer-->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- SimpleLightbox plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        
+    </body>
 </html>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
