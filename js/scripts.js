@@ -7,6 +7,15 @@
 // Scripts
 // 
 
+// Add this at the top of your existing script
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+if (window.location.hash) {
+    history.replaceState(null, null, window.location.pathname);
+}
+window.scrollTo(0, 0);
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
